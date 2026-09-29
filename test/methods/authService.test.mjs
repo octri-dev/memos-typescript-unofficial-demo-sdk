@@ -41,7 +41,7 @@ const CALL = {
   authServiceRefreshToken: {
     route: "AuthService_RefreshToken",
     mediaType: "application/json",
-    invoke: (bag) => authServiceRefreshToken(config, { body: bag.__body }),
+    invoke: (bag) => authServiceRefreshToken(config, bag.__body),
   },
   authServiceSignIn: {
     route: "AuthService_SignIn",
